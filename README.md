@@ -24,7 +24,7 @@ AI 行列30 for Windows 是一套以 **Windows TSF（Text Services Framework）*
 
 YouTube：
 
-👉 **[AI 行列30 Windows 版｜連續輸入實測與操作示範](https://youtu.be/0_sohVOYjJQ)**
+👉 **[AI 行列30 Windows 版｜連續輸入實測與操作示範](https://youtu.be/O_sohVOYjJQ)**
 
 ---
 
@@ -298,39 +298,3 @@ assets/
 AI 行列30目前仍持續測試與改善 NexaCore 連續輸入、個人學習、候選排序及共用資料庫內容。
 
 不同使用者的輸入習慣不同，連續輸入候選不一定每次都與使用者預期完全相同；可透過個人學習、新增／修改／刪除候選持續調整。
-
----
-
-## 👤 Author
-
-**Terence0816**
-
----
-
-## English
-
-**AI Array30 for Windows** is a native Windows TSF Traditional Chinese input method based on the Array30 input method.
-
-It adds **NexaCore continuous input**, local personalization, background phrase learning, Top1/Top3 candidate display, candidate editing, Shift/Ctrl+Space language switching, and optional anonymous shared learning.
-
-### Highlights
-
-- Native Windows TSF IME
-- Array30 input method
-- NexaCore continuous Chinese input
-- Top1 / Top3 candidate display
-- Local personalized learning
-- Background 2–10 character phrase learning
-- Candidate add / edit / delete
-- Color-coded code-to-character hints
-- Single Shift language switching
-- Hold Shift for temporary English input
-- Ctrl + Space support
-- Optional anonymous shared learning
-- Single Setup EXE installer
-
-### Download
-
-👉 **[Latest Release](https://github.com/Terence0816/AIArray30/releases/latest)**
-
-This repository provides documentation, screenshots and official release installers only. **Source code is not published.**
