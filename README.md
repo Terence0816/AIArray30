@@ -1,7 +1,7 @@
 # ⌨️ AI 行列30｜Windows + Android
 
 [![Downloads](https://img.shields.io/github/downloads/Terence0816/AIArray30/total?label=Downloads&color=success)](https://github.com/Terence0816/AIArray30/releases)
-[![Windows](https://img.shields.io/badge/Windows-v0.5.8-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/v0.5.8)
+[![Windows](https://img.shields.io/badge/Windows-v0.5.9-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.5.9)
 [![Android](https://img.shields.io/badge/Android-v1.1.5-3DDC84?logo=android&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)
 ![NexaCore](https://img.shields.io/badge/AI-NexaCore-6f42c1)
 ![IME](https://img.shields.io/badge/輸入法-行列30-0A84FF)
@@ -21,10 +21,11 @@
 
 > **Windows 與 Android 的最新版本入口放在這裡，不需要依賴 GitHub 右側只能顯示一個的 Latest Release。**
 
-| 平台 | 目前版本 | 下載 |
+| 項目 | 目前版本 | 下載 |
 | --- | --- | --- |
-| 💻 **Windows 10 / 11 x64** | **v0.5.8** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/v0.5.8)** |
+| 💻 **Windows 10 / 11 x64** | **v0.5.9** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.5.9)** |
 | 📱 **Android** | **v1.1.5** | **[下載 Android APK](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)** |
+| 🧩 **行列30 二級簡碼練習工具** | **v0.1.7** | **[下載練習工具](https://github.com/Terence0816/AIArray30/releases/download/v0.5.8/Array30Trainer.zip)** |
 
 👉 **[查看所有 Releases / 歷史版本](https://github.com/Terence0816/AIArray30/releases)**
 
@@ -114,6 +115,35 @@ AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，�
 - `Ctrl + Space` 傳統切換方式
 - 游標附近「中 / 英」狀態提示
 - Windows 11「進階鍵盤設定 → 覆寫預設輸入法」
+
+---
+
+# 🧩 行列30 二級簡碼練習工具
+
+另外提供獨立的 **行列30 二級簡碼練習工具 v0.1.7**，可用來練習與熟悉二級簡碼按鍵。
+
+👉 **[下載 Array30Trainer.zip](https://github.com/Terence0816/AIArray30/releases/download/v0.5.8/Array30Trainer.zip)**
+
+主要功能：
+
+- 二級簡碼練習
+- 顯示中文字、英文按碼與行列按鍵
+- 正確 / 錯誤即時統計
+- 正確率與練習時間顯示
+- 順序練習
+- 隨機練習（可重複）
+- 隨機練習（不可重複）
+- 常錯字練習
+- 可設定練習範圍
+- 可提高錯誤字再次出現的頻率
+- 可設定同字連續答對後自動排除
+- 語音提示與語速調整
+
+> 練習工具為獨立 Windows 小工具，不影響 AI 行列30 輸入法本體。
+
+<p align="center">
+  <img src="assets/tools/array30-level2-trainer.jpg" alt="行列30 二級簡碼練習工具" width="92%">
+</p>
 
 ---
 
@@ -293,6 +323,18 @@ AI 行列30提供選用的共用學習機制，預設關閉。
 
 正式 Shared DB 與個人學習互相獨立，個人本機學習具有較高優先權。
 
+---
+
+# 🔐 NexaCore 核心保護
+
+Windows 與 Android 正式版的 NexaCore 模型採加密封裝。
+
+- AES-256-GCM
+- 完整性驗證
+- 執行時於記憶體中解密 / 載入
+- 不將原始明文模型作為正式發布檔直接提供
+
+加密主要發生在核心載入階段；正常輸入時直接使用已載入的模型，不會每打一個字重新解密。
 
 ---
 
@@ -326,7 +368,7 @@ AI 行列30提供選用的共用學習機制，預設關閉。
 | 項目 | Windows | Android |
 | --- | --- | --- |
 | 作業系統 | Windows 10 / 11 | Android |
-| 架構 / 框架 | x64 / Windows TSF | Android IME |
+| 架構 / 框架 | Windows x64 / TSF（支援 x86、x64 應用程式） | Android IME |
 | 安裝檔 | Setup EXE | APK |
 | 一般行列輸入 | 離線可用 | 離線可用 |
 | NexaCore | 本機執行 | 本機執行 |
@@ -344,6 +386,8 @@ README.md
 assets/
 ├─ AIArray30_Cover.png
 ├─ AIArray30_Android_Cover.png
+├─ tools/
+│  └─ array30-level2-trainer.jpg
 └─ screenshots/
    ├─ general-settings.png
    ├─ continuous-input.png
@@ -370,7 +414,7 @@ Windows 與 Android 使用**同一個 Repository、不同 Release**。
 
 ```text
 Windows:
-v0.5.8
+win-v0.5.9
 
 Android:
 android-v1.1.5
