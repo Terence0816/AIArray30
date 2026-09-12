@@ -1,124 +1,270 @@
-# ⌨️ AI 行列30 for Windows
+# ⌨️ AI 行列30｜Windows + Android
 
 [![Downloads](https://img.shields.io/github/downloads/Terence0816/AIArray30/total?label=Downloads&color=success)](https://github.com/Terence0816/AIArray30/releases)
-![Version](https://img.shields.io/github/v/release/Terence0816/AIArray30?label=Version&color=blue)
-![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?logo=windows&logoColor=white)
-![Architecture](https://img.shields.io/badge/Architecture-x64-6f42c1)
-![IME](https://img.shields.io/badge/Windows-TSF-0A84FF)
+[![Windows](https://img.shields.io/badge/Windows-v0.5.8-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/v0.5.8)
+[![Android](https://img.shields.io/badge/Android-v1.1.5-3DDC84?logo=android&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)
+![NexaCore](https://img.shields.io/badge/AI-NexaCore-6f42c1)
+![IME](https://img.shields.io/badge/輸入法-行列30-0A84FF)
 
-<p align="center">
-  <img src="assets/AIArray30_Cover.png" alt="AI 行列30 for Windows" width="100%">
-</p>
+**AI 行列30**是在傳統行列30輸入方式上，加入 **NexaCore 連續輸入、個人化學習、背景詞組學習、碼字對應色彩提示**等功能的中文輸入法。
 
-**保留熟悉的行列30輸入方式，加入 NexaCore 連續輸入、個人化學習與更現代的 Windows 輸入體驗。**
+目前同一個 Repository 提供：
 
-AI 行列30 for Windows 是一套以 **Windows TSF（Text Services Framework）** 為基礎的行列30輸入法。
+- 💻 **Windows 原生 TSF 版**
+- 📱 **Android 版**
 
-除了傳統逐字輸入外，也加入 **NexaCore 連續輸入引擎**，可將連續輸入的行列碼組合成較合理的中文字句，並透過本機個人學習逐步適應使用者的輸入習慣。
-
-> 本 Repository 目前僅提供程式介紹、畫面與正式安裝版下載，**不公開原始碼**。
+> 本 Repository 提供程式介紹、畫面與正式安裝版下載，**不公開 AIArray30 原始碼**。
 
 ---
 
-## 🎬 操作示範
+# 📥 下載｜Download
 
-YouTube：
+> **Windows 與 Android 的最新版本入口放在這裡，不需要依賴 GitHub 右側只能顯示一個的 Latest Release。**
+
+| 平台 | 目前版本 | 下載 |
+| --- | --- | --- |
+| 💻 **Windows 10 / 11 x64** | **v0.5.8** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/v0.5.8)** |
+| 📱 **Android** | **v1.1.5** | **[下載 Android APK](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)** |
+
+👉 **[查看所有 Releases / 歷史版本](https://github.com/Terence0816/AIArray30/releases)**
+
+Windows Release 主要提供：
+
+```text
+AIArray30_Setup_vX.X.X.exe
+AIArray30_Setup_vX.X.X.exe_sha256.txt
+```
+
+Android Release 主要提供：
+
+```text
+AIArray30_vX.X.X.apk
+AIArray30_vX.X.X.apk_sha256.txt
+```
+
+---
+
+## 🖼️ Windows / Android
+
+<p align="center">
+  <img src="assets/AIArray30_Cover.png" alt="AI 行列30 Windows" width="48%">
+  <img src="assets/AIArray30_Android_Cover.png" alt="AI 行列30 Android" width="48%">
+</p>
+
+---
+
+# ✨ 主要特色
+
+| 功能 | Windows | Android |
+| --- | :---: | :---: |
+| 標準行列30輸入 | ✅ | ✅ |
+| NexaCore 行列連續輸入 | ✅ | ✅ |
+| Top1 / Top3 連續候選 | ✅ | ✅ |
+| 碼字對應彩色提示 | ✅ | ✅ |
+| 背景詞組學習 | ✅ | ✅ |
+| 本機個人化學習 | ✅ | ✅ |
+| 匿名共用學習 | ✅ | ✅ |
+| 正式 Shared DB 更新 | ✅ | ✅ |
+| 連續手寫 | — | ✅ |
+| 手寫後顯示行列拆碼 | — | ✅ |
+| 不中斷語音輸入 | — | ✅ |
+| Google / Deepgram / 自訂 STT | — | ✅ |
+| 第二層 AI 文字整理 | — | ✅ |
+| Windows TSF | ✅ | — |
+
+---
+
+# 💻 Windows 版
+
+AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，以原生 C++ 實作。
+
+除了傳統逐字行列輸入，也可以直接使用 NexaCore 連續輸入；一般輸入與連續輸入可共存，不需要為每一句頻繁切換輸入法。
+
+## 🎬 Windows 操作示範
 
 👉 **[AI 行列30 Windows 版｜連續輸入實測與操作示範](https://youtu.be/O_sohVOYjJQ)**
 
----
-
-## 🖼️ 介面預覽
+## 🖼️ Windows 介面預覽
 
 ### 一般設定
 
-可設定 Shift／Ctrl + Space 中英文切換、NexaCore 連續輸入、多組連續候選、背景詞組學習、候選視窗字型與碼字對應色彩提示。
+可設定 Shift／Ctrl + Space 中英文切換、NexaCore 連續輸入、多組候選、背景詞組學習、候選字型與碼字對應色彩提示。
 
-![AI 行列30 一般設定](assets/screenshots/general-settings.png)
+![AI 行列30 Windows 一般設定](assets/screenshots/general-settings.png)
 
 ### NexaCore 連續輸入
 
-輸入一整串行列碼後，由 NexaCore 依照合法候選與中文上下文進行組句與排序；可選擇只顯示最優候選，或最多顯示 3 組自動候選。
+輸入一整串行列碼後，由 NexaCore 依合法切碼、候選組合與中文上下文進行組句及排序。
 
-上方行列碼可依第一候選句的實際切碼結果顯示對應色彩，方便辨識每一段碼所對應的中文字。
-
-![AI 行列30 NexaCore 連續輸入](assets/screenshots/continuous-input.png)
+![AI 行列30 Windows NexaCore 連續輸入](assets/screenshots/continuous-input.png)
 
 ### 連續輸入詞彙共用學習中心
 
-共用學習為選用功能，預設關閉。開啟後，可將必要的新增、修改與刪除／拒絕候選事件匿名送入共用學習流程，協助改善正式共用資料庫。
+共用學習為選用功能，預設關閉。一般正常打字內容與本機背景詞組學習不會因此全部上傳。
 
-一般打字內容與本機背景詞組學習不會因為這個功能而全部上傳。
+![AI 行列30 Windows 共用學習中心](assets/screenshots/shared-learning-center.png)
 
-![AI 行列30 共用學習中心](assets/screenshots/shared-learning-center.png)
+## ⌨️ Windows 中英文切換
 
----
+支援：
 
-## ✨ 主要功能
-
-- Windows 原生 **TSF 輸入法**
-- 支援標準行列30輸入
-- **NexaCore 連續輸入**
-- 自動候選可選擇 **Top1 / Top3** 顯示
-- 自動產生的連續候選最多保留 3 組，降低雜訊與長期負擔
-- 手動新增／修改的個人候選不受 Top3 限制
-- 一般逐字輸入也可進行 **背景詞組學習**
-- 背景學習會記錄常用的 2～10 字詞組，協助之後的連續輸入排序
-- 個人本機學習優先於正式共用資料庫與核心預設排序
-- 候選可自行新增、編輯與刪除
-- 支援第一候選的 **碼字對應色彩提示**
-- 支援單按 Shift 切換中／英文
-- 支援按住 Shift 暫時輸入英文／符號，放開後自動回到原中文模式
-- 支援 `Ctrl + Space` 切換中／英文
-- 可在游標附近顯示「中／英」狀態提示
-- 支援 Windows 11「進階鍵盤設定 → 覆寫預設輸入法」
-- 可選擇參與匿名共用學習
-- 正式共用資料庫可獨立更新，不影響個人本機學習
-- 單一 Setup EXE 安裝／更新／移除
+- 單按 Shift 切換中／英文
+- 可指定所有 Shift、左 Shift 或右 Shift
+- 中文模式下按住 Shift 暫時輸入英文／符號，放開後回到原中文模式
+- `Ctrl + Space` 傳統切換方式
+- 游標附近「中 / 英」狀態提示
+- Windows 11「進階鍵盤設定 → 覆寫預設輸入法」
 
 ---
 
-## 🧠 NexaCore 連續輸入
+# 📱 Android 版
+
+Android 版除了 NexaCore 行列連續輸入，也整合了更適合手機操作的 **連續手寫、語音輸入與自動拆碼提示**。
+
+<p align="center">
+  <img src="assets/AIArray30_Android_Cover.png" alt="AI 行列30 Android" width="90%">
+</p>
+
+## 🧠 NexaCore 行列連續輸入
+
+輸入一整串行列碼後，由 NexaCore 自動建立合法切碼與候選組合，再依中文上下文與學習資料排序。
+
+第一候選可同步顯示：
+
+- 每個中文字
+- 對應的一整組行列字根
+- 相同顏色的碼字配對
+
+讓使用者能直接看出：
+
+```text
+哪一段行列碼 → 對應哪一個中文字
+```
+
+<p align="center">
+  <img src="assets/screenshots/android/continuous-input.png" alt="Android NexaCore 連續輸入" width="62%">
+</p>
+
+## ✍️ 連續手寫＋自動顯示行列拆碼
+
+Android 版可直接在按鍵區進行快速手寫，不需先切換到另一套手寫鍵盤。
+
+主要特色：
+
+- 支援連續手寫
+- 手寫辨識後直接進入候選
+- 自動顯示辨識文字的行列拆碼
+- 可選「最小拆碼」或其他拆碼顯示方式
+- 可選是否加入簡體字辨識並轉為臺灣繁體
+
+<p align="center">
+  <img src="assets/screenshots/android/handwriting.png" alt="Android 連續手寫" width="52%">
+</p>
+
+## 🎙️ 不中斷語音輸入
+
+Android 版語音輸入可延長聽寫時間，說話過程持續將內容送入文字欄位，不必每說一句就重新按一次語音鍵。
+
+第一階段語音辨識可選：
+
+- Google 語音
+- Deepgram
+- 自訂語音辨識服務
+
+並支援停頓補逗號、口述標點 / Enter / 換行 / 分段等行為。
+
+<p align="center">
+  <img src="assets/screenshots/android/voice-input.png" alt="Android 不中斷語音輸入" width="52%">
+</p>
+
+## 🤖 第二層 AI 文字整理（可選）
+
+第一階段先取得語音辨識文字；若啟用第二層 AI，可再進行語句整理。
+
+目前介面可選 AI 服務，API Key 僅保存在本機設定與使用者自行建立的備份中。
+
+<details>
+<summary><b>查看 Android 詳細設定畫面</b></summary>
+
+### NexaCore / 連續輸入設定
+
+<p align="center">
+  <img src="assets/screenshots/android/settings-nexacore.png" alt="Android NexaCore 設定" width="52%">
+</p>
+
+### 語音辨識與停頓設定
+
+<p align="center">
+  <img src="assets/screenshots/android/settings-voice.png" alt="Android 語音設定" width="52%">
+</p>
+
+### 快速手寫與拆碼設定
+
+<p align="center">
+  <img src="assets/screenshots/android/settings-handwriting.png" alt="Android 手寫設定" width="52%">
+</p>
+
+### 第二層 AI / 關於 / 儲存設定
+
+<p align="center">
+  <img src="assets/screenshots/android/settings-ai.png" alt="Android AI 設定" width="52%">
+</p>
+
+</details>
+
+---
+
+# 🧠 NexaCore 連續輸入
 
 傳統行列30通常以逐字輸入為主。
 
 AI 行列30加入 NexaCore 後，可以將一段連續輸入的行列碼先建立合法候選，再依中文上下文進行組句與排序。
 
-例如同一串碼可能同時存在多種合法組合，NexaCore 會依照：
+NexaCore 會綜合考慮：
 
 - 行列碼合法性
+- 合法切碼方式
 - 字詞搭配
 - 中文上下文
 - 個人本機學習
 - 背景詞組習慣
 - 正式共用資料庫
 
-綜合決定較適合的候選順序。
+## Top1 / Top3
 
-### Top1 / Top3
+設定中可選擇：
 
-設定中可選擇是否顯示多組連續候選：
+- **關閉多組候選**：只顯示最佳 Top1
+- **開啟多組候選**：最多顯示 Top3 自動候選
 
-- **關閉**：只顯示最優 1 組
-- **開啟**：最多顯示 3 組自動候選
-
-如果某組候選被使用者刪除，不會再拿原本第 4 名自動補回來。
-
-使用者自己手動新增的候選，則不受自動 Top3 限制。
+自動產生的候選以 Top3 為限；使用者手動新增或修改的個人候選不受此限制。
 
 ---
 
-## 📚 背景詞組學習
+# 🎨 碼字對應色彩提示
+
+Windows 與 Android 都可以依第一個有效連續候選的**實際切碼結果**，將：
+
+- 行列碼
+- 第一候選中的中文字
+
+用相同顏色分組顯示。
+
+不是依字數平均切分，而是依行列碼表實際驗證切碼。
+
+---
+
+# 📚 背景詞組學習
 
 除了明確新增或修改候選外，AI 行列30也可以從一般逐字輸入中學習常用詞組。
 
-例如平常逐字輸入：
+例如平常輸入：
 
 ```text
 我要回家喝咖啡
 ```
 
-系統可以在本機逐步記住常用的 2～10 字組合，例如：
+本機可以逐步記住常用的 2～10 字組合，例如：
 
 ```text
 我要
@@ -127,174 +273,143 @@ AI 行列30加入 NexaCore 後，可以將一段連續輸入的行列碼先建�
 我要回家喝咖啡
 ```
 
-之後使用連續輸入時，即使核心原本沒有把某個組合排在前面，也可以因為你的實際使用習慣提高順位。
+之後使用連續輸入遇到相同按鍵碼時，可補進候選並改善排序。
 
-背景詞組學習為 **本機個人資料**，不會直接當成共用資料上傳。
-
----
-
-## 🎨 碼字對應色彩提示
-
-連續輸入候選視窗可以依照第一候選句的實際切碼方式，將：
-
-- 上方行列碼
-- 第一候選句中的中文字
-
-以相同顏色分組顯示。
-
-如果一個字由多個行列碼組成，整組碼會使用相同顏色，讓使用者更容易看出：
-
-```text
-哪一段碼 → 對應哪一個字
-```
-
-此功能可於設定中開啟或關閉。
+> 背景詞組學習只存在本機，不會直接當成共用學習內容上傳。
 
 ---
 
-## ⌨️ 中英文切換
+# ☁️ 匿名共用學習
 
-### 單按 Shift
+AI 行列30提供選用的共用學習機制，預設關閉。
 
-可設定：
-
-- 所有 Shift
-- 左 Shift
-- 右 Shift
-
-單獨按一下 Shift 再放開，即可切換中文／英文輸入模式。
-
-### 按住 Shift 暫時輸入英文
-
-在中文模式中，可以：
-
-```text
-按住 Shift → 輸入 ABC / 數字符號 → 放開 Shift → 繼續中文輸入
-```
-
-只要 Shift 期間有搭配其他按鍵，就不會被判定成「切換中英文模式」。
-
-### Ctrl + Space
-
-仍支援傳統 `Ctrl + Space` 切換中／英文。
-
----
-
-## ☁️ 匿名共用學習
-
-AI 行列30提供選用的「連續輸入詞彙共用學習中心」。
-
-此功能預設關閉。
-
-啟用後，只有與候選改善有關的必要事件才會進入共用學習流程，例如：
+啟用後，僅將與候選改善相關的必要事件送入共用學習流程，例如：
 
 - 新增候選
 - 修改候選
 - 刪除／拒絕不適合的候選
 
-一般正常選字不會因為共用學習而全部送出；本機背景詞組與個人習慣仍保存在本機。
+一般正常選字不會因此全部送出；本機背景詞組與個人習慣仍保留在本機。
 
-正式共用資料庫與個人學習互相獨立，個人本機學習具有較高優先權。
+正式 Shared DB 與個人學習互相獨立，個人本機學習具有較高優先權。
 
----
-
-## 📦 下載
-
-### 最新版本
-
-👉 **[下載最新版本 / Latest Release](https://github.com/Terence0816/AIArray30/releases/latest)**
-
-👉 **[查看所有 Releases / 發行版本](https://github.com/Terence0816/AIArray30/releases)**
-
-正式版本僅提供 Windows 安裝程式，不提供原始碼。
-
-Release 安裝檔名稱會類似：
-
-```text
-AIArray30_Setup_vX.X.X.exe
-```
 
 ---
 
-## 🚀 安裝、更新與移除
+# 🚀 安裝與更新
 
-下載最新版 Setup 後直接執行即可。
+## Windows
 
-### 第一次執行
+下載 `AIArray30_Setup_vX.X.X.exe` 後直接執行。
 
-若電腦尚未安裝 AI 行列30，Setup 會詢問是否安裝目前版本。
+- 未安裝 → 安裝目前版本
+- 已安裝舊版本 → 提示更新
+- 已安裝相同版本 → 可選擇解除安裝
+- 已安裝較新版本 → 舊版 Setup 不直接覆蓋
 
-### 已安裝舊版本
-
-若偵測到較舊版本，Setup 會提示更新。
-
-### 已安裝相同版本
-
-再次執行同版本 Setup 時，可選擇移除 AI 行列30。
-
-### 已安裝較新版本
-
-較舊的 Setup 不會直接覆蓋較新的已安裝版本。
-
-安裝完成後，可在 Windows 的輸入法清單中選擇：
+安裝完成後，可在 Windows 輸入法清單中選擇：
 
 ```text
 繁體中文（台灣）－ AI 行列30
 ```
 
----
+## Android
 
-## 🔐 數位簽章與安全性
+下載 `AIArray30_vX.X.X.apk` 後安裝。
 
-正式 Release 的安裝程式可使用 Windows Authenticode 數位簽章。
-
-NexaCore 核心模型會以加密封裝方式隨安裝程式提供，執行時由輸入法在本機載入。
-
-建議只從本專案的 GitHub Releases 頁面下載正式版本。
+若 Android 阻擋非商店 APK，需依手機系統提示允許目前使用的瀏覽器或檔案管理程式安裝未知來源 App。
 
 ---
 
-## 💻 系統需求
+# 💻📱 系統需求
 
-| 項目 | 需求 |
-| --- | --- |
-| 作業系統 | Windows 10 / Windows 11 |
-| 架構 | 64-bit x64 |
-| 輸入法架構 | Windows TSF |
-| 安裝方式 | 單一 Setup EXE |
-| 網路 | 一般輸入不需要；共用資料庫／共用學習功能需要 |
-| 權限 | 安裝時依 Windows 提示取得必要權限 |
+| 項目 | Windows | Android |
+| --- | --- | --- |
+| 作業系統 | Windows 10 / 11 | Android |
+| 架構 / 框架 | x64 / Windows TSF | Android IME |
+| 安裝檔 | Setup EXE | APK |
+| 一般行列輸入 | 離線可用 | 離線可用 |
+| NexaCore | 本機執行 | 本機執行 |
+| 共用學習 / Shared DB | 需要網路 | 需要網路 |
+| 語音 / 第二層 AI | — | 視所選服務需要網路 |
 
 ---
 
-## 📁 Repository 說明
+# 📁 Repository 結構
 
-此 GitHub Repository 主要提供：
+建議 Repository 圖片結構：
 
 ```text
 README.md
 assets/
 ├─ AIArray30_Cover.png
+├─ AIArray30_Android_Cover.png
 └─ screenshots/
    ├─ general-settings.png
    ├─ continuous-input.png
-   └─ shared-learning-center.png
+   ├─ shared-learning-center.png
+   └─ android/
+      ├─ settings-nexacore.png
+      ├─ continuous-input.png
+      ├─ voice-input.png
+      ├─ handwriting.png
+      ├─ settings-ai.png
+      ├─ settings-voice.png
+      └─ settings-handwriting.png
 ```
 
-正式安裝程式統一透過 **GitHub Releases** 發布。
-
-**本 Repository 不公開 AI 行列30原始碼。**
+Windows 目前既有的圖片檔名可保持不變，只需要新增 Android 封面與 `assets/screenshots/android/` 內的 Android 圖片即可。
 
 ---
 
-## 🔎 搜尋關鍵字
+# 📦 Release 規劃
 
-`AIArray30`, `Array30`, `行列30`, `行列輸入法`, `中文輸入法`, `Windows輸入法`, `TSF`, `NexaCore`, `連續輸入`, `AI輸入法`, `智慧輸入`, `中文打字`, `Traditional Chinese IME`, `Windows IME`, `Array input method`
+Windows 與 Android 使用**同一個 Repository、不同 Release**。
+
+目前：
+
+```text
+Windows:
+v0.5.8
+
+Android:
+android-v1.1.5
+```
+
+這樣兩個平台可以各自有自己的版本、APK / EXE 與發行說明，不需要把兩個安裝檔硬塞在同一個 Release。
+
+README 最上方固定提供兩個平台各自的下載入口，因此不受 GitHub 首頁右側只能顯示一個 Latest Release 的限制。
 
 ---
 
-## ⚠️ 使用說明
+# 🔎 搜尋關鍵字
 
-AI 行列30目前仍持續測試與改善 NexaCore 連續輸入、個人學習、候選排序及共用資料庫內容。
+`AIArray30`, `Array30`, `行列30`, `行列輸入法`, `中文輸入法`, `Windows輸入法`, `Android輸入法`, `TSF`, `NexaCore`, `連續輸入`, `連續手寫`, `語音輸入`, `AI輸入法`, `智慧輸入`, `中文打字`, `Traditional Chinese IME`, `Windows IME`, `Android IME`, `Array input method`
 
-不同使用者的輸入習慣不同，連續輸入候選不一定每次都與使用者預期完全相同；可透過個人學習、新增／修改／刪除候選持續調整。
+---
+
+# ⚠️ 使用說明
+
+AI 行列30仍持續測試與改善 NexaCore 連續輸入、個人學習、候選排序、Shared DB、Android 手寫與語音功能。
+
+不同使用者的輸入習慣不同，連續輸入候選仍可能需要自行選擇、修改或新增。
+
+若遇到問題，建議在 GitHub Issues 提供：
+
+- Windows / Android 版本
+- AIArray30 版本
+- 問題發生步驟
+- 可重現的輸入內容
+- 必要時附上畫面截圖
+
+---
+
+## 👤 Author
+
+**Terence0816**
+
+GitHub：**[Terence0816/AIArray30](https://github.com/Terence0816/AIArray30)**
+
+---
+
+如果你覺得 AI 行列30對你有幫助，歡迎在 GitHub 專案點一個 ⭐ Star。
