@@ -21,11 +21,11 @@
 
 > **Windows 與 Android 的最新版本入口放在這裡，不需要依賴 GitHub 右側只能顯示一個的 Latest Release。**
 
-| 項目 | 目前版本 | 下載 |
-| --- | --- | --- |
-| 💻 **Windows 10 / 11 x64** | **v0.5.9** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.5.9)** |
-| 📱 **Android** | **v1.1.5** | **[下載 Android APK](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)** |
-| 🧩 **行列30 二級簡碼練習工具** | **v0.1.7** | **[下載練習工具](https://github.com/Terence0816/AIArray30/releases/download/v0.5.8/Array30Trainer.zip)** |
+| 項目 | 目前版本 | 下載 | 影片 |
+| --- | --- | --- | --- |
+| 💻 **Windows 10 / 11 x64** | **v0.5.9** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.5.9)** | **[YouTube 示範教學](https://youtu.be/O_sohVOYjJQ)** |
+| 📱 **Android** | **v1.1.5** | **[下載 Android APK](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)** | **[YouTube 示範教學](https://youtu.be/YV7B3DLtNjY)** |
+| 🧩 **行列30 二級簡碼練習工具** | **v0.1.7** | **[下載練習工具](https://github.com/Terence0816/AIArray30/releases/download/v0.5.8/Array30Trainer.zip)** | — |
 
 👉 **[查看所有 Releases / 歷史版本](https://github.com/Terence0816/AIArray30/releases)**
 
@@ -142,7 +142,7 @@ AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，�
 > 練習工具為獨立 Windows 小工具，不影響 AI 行列30 輸入法本體。
 
 <p align="center">
-  <img src="assets/tools/array30-level2-trainer.jpg" alt="行列30 二級簡碼練習工具" width="92%">
+  <img src="assets/tools/array30-level2-trainer.png" alt="行列30 二級簡碼練習工具" width="92%">
 </p>
 
 ---
@@ -150,6 +150,10 @@ AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，�
 # 📱 Android 版
 
 Android 版除了 NexaCore 行列連續輸入，也整合了更適合手機操作的 **連續手寫、語音輸入與自動拆碼提示**。
+
+## 🎬 Android 操作示範
+
+👉 **[AI 行列30 Android 版｜YouTube 示範教學](https://youtu.be/YV7B3DLtNjY)**
 
 <p align="center">
   <img src="assets/AIArray30_Android_Cover.png" alt="AI 行列30 Android" width="90%">
@@ -387,7 +391,7 @@ assets/
 ├─ AIArray30_Cover.png
 ├─ AIArray30_Android_Cover.png
 ├─ tools/
-│  └─ array30-level2-trainer.jpg
+│  └─ array30-level2-trainer.png
 └─ screenshots/
    ├─ general-settings.png
    ├─ continuous-input.png
