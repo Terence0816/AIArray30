@@ -1,7 +1,7 @@
 # ⌨️ AI 行列30｜Windows + Android
 
 [![Downloads](https://img.shields.io/github/downloads/Terence0816/AIArray30/total?label=Downloads&color=success)](https://github.com/Terence0816/AIArray30/releases)
-[![Windows](https://img.shields.io/badge/Windows-v0.5.9-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.5.9)
+[![Windows](https://img.shields.io/badge/Windows-v0.7.5-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.7.5)
 [![Android](https://img.shields.io/badge/Android-v1.1.5-3DDC84?logo=android&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)
 ![NexaCore](https://img.shields.io/badge/AI-NexaCore-6f42c1)
 ![IME](https://img.shields.io/badge/輸入法-行列30-0A84FF)
@@ -19,11 +19,11 @@
 
 # 📥 下載｜Download
 
-> **Windows 與 Android 的最新版本入口放在這裡，不需要依賴 GitHub 右側只能顯示一個的 Latest Release。**
+> **Windows 與 Android 的最新版本入口固定放在這裡，不需要依賴 GitHub 右側只能顯示一個的 Latest Release。**
 
 | 項目 | 目前版本 | 下載 | 影片 |
 | --- | --- | --- | --- |
-| 💻 **Windows 10 / 11 x64** | **v0.5.9** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.5.9)** | **[YouTube 示範教學](https://youtu.be/O_sohVOYjJQ)** |
+| 💻 **Windows 10 / 11** | **v0.7.5** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.7.5)** | **[YouTube 示範教學](https://youtu.be/O_sohVOYjJQ)** |
 | 📱 **Android** | **v1.1.5** | **[下載 Android APK](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)** | **[YouTube 示範教學](https://youtu.be/YV7B3DLtNjY)** |
 | 🧩 **行列30 二級簡碼練習工具** | **v0.1.7** | **[下載練習工具](https://github.com/Terence0816/AIArray30/releases/download/v0.5.8/Array30Trainer.zip)** | — |
 
@@ -66,12 +66,15 @@ AIArray30_vX.X.X.apk_sha256.txt
 | 本機個人化學習 | ✅ | ✅ |
 | 匿名共用學習 | ✅ | ✅ |
 | 正式 Shared DB 更新 | ✅ | ✅ |
+| 個人學習匯出 / 匯入 | ✅ | ✅ |
+| AI 行列30 專屬螢幕鍵盤 | ✅ | — |
+| Shift 臨時英文輸入 | ✅ | — |
+| Windows TSF | ✅ | — |
 | 連續手寫 | — | ✅ |
 | 手寫後顯示行列拆碼 | — | ✅ |
 | 不中斷語音輸入 | — | ✅ |
 | Google / Deepgram / 自訂 STT | — | ✅ |
 | 第二層 AI 文字整理 | — | ✅ |
-| Windows TSF | ✅ | — |
 
 ---
 
@@ -80,6 +83,20 @@ AIArray30_vX.X.X.apk_sha256.txt
 AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，以原生 C++ 實作。
 
 除了傳統逐字行列輸入，也可以直接使用 NexaCore 連續輸入；一般輸入與連續輸入可共存，不需要為每一句頻繁切換輸入法。
+
+Windows 11 x64 系統中同時提供 **x64 + x86 TSF**，因此可支援 64 位元與 32 位元應用程式。
+
+## 🆕 Windows v0.5.9 ～ v0.7.5 主要更新
+
+- 修復搭配 Windows 系統螢幕小鍵盤時，Chrome / Edge / Brave / Facebook 等瀏覽器的候選窗定位問題。
+- 修復中文模式下按住 **Shift** 臨時輸入英文後，部分軟體無法自動回到中文模式的問題。
+- 完善個人學習資料 **匯出 / 匯入**，包含候選順序、個人修改句子、背景詞組學習與相關輸入習慣。
+- 新增 **AI 行列30 專屬螢幕鍵盤**，支援行列鍵位、中英即時切換、三排配色、自訂色盤、大小 / 位置調整與自訂熱鍵。
+- 重新設計「連續輸入句子」的新增 / 編輯介面，加入碼字對應配色、即時錯誤辨識與長句自動延伸。
+- 修復連續句子編輯視窗確認 / 取消時可能造成宿主程式閃退的問題。
+- 修復工作列右下角「中 / 英」狀態偶爾消失，需要按 Shift 才恢復顯示的問題。
+
+👉 **[查看 Windows v0.7.5 Release](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.7.5)**
 
 ## 🎬 Windows 操作示範
 
@@ -93,11 +110,59 @@ AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，�
 
 ![AI 行列30 Windows 一般設定](assets/screenshots/general-settings.png)
 
+### ⌨️ AI 行列30 專屬螢幕鍵盤
+
+Windows 版內建 AI 行列30 專屬螢幕鍵盤，可與實體鍵盤同時交替輸入。
+
+中文模式會直接顯示行列30鍵位，預設使用：
+
+- **上排：青色** `1↑ ～ 0↑`
+- **中排：橘色** `1- ～ 0-`
+- **下排：綠色** `1↓ ～ 0↓`
+- 可選擇是否顯示小型 QWERTY 英文鍵位
+- 切到英文模式後自動恢復純 QWERTY 鍵盤
+
+<p align="center">
+  <img src="assets/screenshots/screen-keyboard-chinese.png" alt="AI 行列30 中文螢幕鍵盤" width="49%">
+  <img src="assets/screenshots/screen-keyboard-english.png" alt="AI 行列30 英文螢幕鍵盤" width="49%">
+</p>
+
+螢幕鍵盤支援：
+
+- 自訂全域呼出熱鍵
+- 背景常駐，按 X 只隱藏鍵盤
+- 可自由拖曳與縮放
+- 自動記住位置與大小
+- 中文 / 英文狀態即時同步
+- 實體鍵盤與螢幕鍵盤交替輸入
+- 滑鼠移入與按下視覺回饋
+- 小尺寸時自動簡化部分功能鍵顯示
+- 行列鍵位可選直列對齊或傳統鍵位排列
+- 三排配色可選預設方案或使用 Windows 色盤自訂
+
+<p align="center">
+  <img src="assets/screenshots/screen-keyboard-settings.png" alt="AI 行列30 螢幕鍵盤設定" width="82%">
+</p>
+
 ### NexaCore 連續輸入
 
 輸入一整串行列碼後，由 NexaCore 依合法切碼、候選組合與中文上下文進行組句及排序。
 
 ![AI 行列30 Windows NexaCore 連續輸入](assets/screenshots/continuous-input.png)
+
+### 連續輸入句子新增 / 編輯
+
+Windows 版可直接新增或修改連續輸入候選句子，並依目前按碼即時驗證。
+
+主要功能：
+
+- 按碼只顯示行列碼，不顯示 QWERTY 英文字母
+- 正確中文字與其對應按碼以相同顏色顯示
+- 從第一個錯字開始顯示粗體深紅色
+- 未匹配按碼顯示為白灰底與灰字
+- 鍵碼不符時顯示黃色警告區
+- 長句會自動加寬、換行與增加輸入框高度
+- 超長內容可在輸入框內捲動
 
 ### 連續輸入詞彙共用學習中心
 
@@ -113,8 +178,24 @@ AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，�
 - 可指定所有 Shift、左 Shift 或右 Shift
 - 中文模式下按住 Shift 暫時輸入英文／符號，放開後回到原中文模式
 - `Ctrl + Space` 傳統切換方式
-- 游標附近「中 / 英」狀態提示
+- 工作列右下角「中 / 英」輸入狀態顯示
+- 螢幕鍵盤跟隨目前中 / 英模式同步切換
 - Windows 11「進階鍵盤設定 → 覆寫預設輸入法」
+
+## 💾 個人學習匯出 / 匯入
+
+Windows 版可將個人使用習慣匯出後帶到另一台電腦。
+
+匯出內容包含：
+
+- 個人新增 / 修改的連續句子
+- 拒絕候選資料
+- 候選選擇與排序學習
+- 一般逐字輸入累積的背景詞組學習
+- Windows 個人輸入設定
+- 螢幕鍵盤相關設定
+
+共同學習服務是否啟用不會因匯入個人資料而自動開啟。
 
 ---
 
@@ -396,6 +477,9 @@ assets/
    ├─ general-settings.png
    ├─ continuous-input.png
    ├─ shared-learning-center.png
+   ├─ screen-keyboard-chinese.png
+   ├─ screen-keyboard-english.png
+   ├─ screen-keyboard-settings.png
    └─ android/
       ├─ settings-nexacore.png
       ├─ continuous-input.png
@@ -405,8 +489,6 @@ assets/
       ├─ settings-voice.png
       └─ settings-handwriting.png
 ```
-
-Windows 目前既有的圖片檔名可保持不變，只需要新增 Android 封面與 `assets/screenshots/android/` 內的 Android 圖片即可。
 
 ---
 
@@ -418,7 +500,7 @@ Windows 與 Android 使用**同一個 Repository、不同 Release**。
 
 ```text
 Windows:
-win-v0.5.9
+win-v0.7.5
 
 Android:
 android-v1.1.5
@@ -432,13 +514,13 @@ README 最上方固定提供兩個平台各自的下載入口，因此不受 Git
 
 # 🔎 搜尋關鍵字
 
-`AIArray30`, `Array30`, `行列30`, `行列輸入法`, `中文輸入法`, `Windows輸入法`, `Android輸入法`, `TSF`, `NexaCore`, `連續輸入`, `連續手寫`, `語音輸入`, `AI輸入法`, `智慧輸入`, `中文打字`, `Traditional Chinese IME`, `Windows IME`, `Android IME`, `Array input method`
+`AIArray30`, `Array30`, `行列30`, `行列輸入法`, `中文輸入法`, `Windows輸入法`, `Android輸入法`, `TSF`, `NexaCore`, `連續輸入`, `連續手寫`, `螢幕鍵盤`, `On-Screen Keyboard`, `語音輸入`, `AI輸入法`, `智慧輸入`, `中文打字`, `Traditional Chinese IME`, `Windows IME`, `Android IME`, `Array input method`
 
 ---
 
 # ⚠️ 使用說明
 
-AI 行列30仍持續測試與改善 NexaCore 連續輸入、個人學習、候選排序、Shared DB、Android 手寫與語音功能。
+AI 行列30仍持續測試與改善 NexaCore 連續輸入、個人學習、候選排序、Shared DB、Windows 螢幕鍵盤、Android 手寫與語音功能。
 
 不同使用者的輸入習慣不同，連續輸入候選仍可能需要自行選擇、修改或新增。
 
