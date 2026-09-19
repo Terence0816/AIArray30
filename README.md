@@ -1,7 +1,7 @@
 # ⌨️ AI 行列30｜Windows + Android
 
 [![Downloads](https://img.shields.io/github/downloads/Terence0816/AIArray30/total?label=Downloads&color=success)](https://github.com/Terence0816/AIArray30/releases)
-[![Windows](https://img.shields.io/badge/Windows-v0.7.5-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.7.5)
+[![Windows](https://img.shields.io/badge/Windows-v1.1.0-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/win-v1.1.0)
 [![Android](https://img.shields.io/badge/Android-v1.1.5-3DDC84?logo=android&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)
 ![NexaCore](https://img.shields.io/badge/AI-NexaCore-6f42c1)
 ![IME](https://img.shields.io/badge/輸入法-行列30-0A84FF)
@@ -23,7 +23,7 @@
 
 | 項目 | 目前版本 | 下載 | 影片 |
 | --- | --- | --- | --- |
-| 💻 **Windows 10 / 11** | **v0.7.5** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v0.7.5)** | **[YouTube 示範教學](https://youtu.be/O_sohVOYjJQ)** |
+| 💻 **Windows 10 / 11** | **v1.1.0** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v1.1.0)** | **[YouTube 示範教學](https://youtu.be/O_sohVOYjJQ)** |
 | 📱 **Android** | **v1.1.5** | **[下載 Android APK](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)** | **[YouTube 示範教學](https://youtu.be/YV7B3DLtNjY)** |
 | 🧩 **行列30 二級簡碼練習工具** | **v0.1.7** | **[下載練習工具](https://github.com/Terence0816/AIArray30/releases/download/v0.5.8/Array30Trainer.zip)** | — |
 
@@ -85,6 +85,48 @@ AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，�
 除了傳統逐字行列輸入，也可以直接使用 NexaCore 連續輸入；一般輸入與連續輸入可共存，不需要為每一句頻繁切換輸入法。
 
 Windows 11 x64 系統中同時提供 **x64 + x86 TSF**，因此可支援 64 位元與 32 位元應用程式。
+
+## 🆕 Windows v0.7.5 ～ v1.1.0 主要更新
+
+### ⌨️ 螢幕鍵盤功能強化
+
+- 螢幕鍵盤可縮小成更精簡的尺寸。
+- 優化小尺寸顯示，Backspace、Home、PgUp / PgDn 等按鍵會自動改用簡潔圖示或短標示，避免文字擠壓。
+- 支援縮小至工作列暫時隱藏，不需完全關閉程式。
+
+### 🎨 設定介面全面重新設計
+
+- 全面重新設計設定介面，改用現代化卡片式版面。
+- 新增深藍色漸層左側導覽列。
+- 新增淡藍色漸層背景與視覺光影效果。
+- 整體重新調整版面、間距、圖示、控制項與視覺一致性。
+
+### 🎙 新增語音輸入功能
+
+> 語音輸入功能限定搭配 AI 行列30 輸入法使用。
+
+![AI 行列30 Windows v1.1.0 語音輸入](assets/screenshots/AIArray30_v1.1.0_voice_input.png)
+
+- 新增背景語音聆聽模式。
+- 可自訂 **開始聆聽 / 停止聆聽** 快速鍵。
+- 可設定 Windows 登入後自動啟用語音聆聽。
+- 新增 **英數狀態下不輸出** 選項。
+- 新增 5 段語音感度調整。
+- 新增即時麥克風音量顯示。
+- 新增語音辨識測試區。
+- 新增手動 **啟動 / 停止** 語音控制。
+- 新增獨立的 **語音輸出簡體中文** 功能。
+- 新增影音播放偵測，可設定影音連續播放超過指定秒數後自動停止語音。
+
+### 🀄 新增簡體中文輸出
+
+- 新增 **輸出簡體中文** 選項。
+- 行列拆碼、候選字詞、學習資料、使用者詞庫及編輯內容，內部仍全部維持繁體中文。
+- 只有在文字真正輸出到應用程式時，才進行繁體 → 簡體轉換。
+- 一般輸入與連續輸入皆支援簡體中文輸出。
+- 語音輸入另有獨立的簡體中文輸出開關，可與鍵盤輸入分開設定。
+
+👉 **[查看 Windows v1.1.0 Release](https://github.com/Terence0816/AIArray30/releases/tag/win-v1.1.0)**
 
 ## 🆕 Windows v0.5.9 ～ v0.7.5 主要更新
 
@@ -458,7 +500,8 @@ Windows 與 Android 正式版的 NexaCore 模型採加密封裝。
 | 一般行列輸入 | 離線可用 | 離線可用 |
 | NexaCore | 本機執行 | 本機執行 |
 | 共用學習 / Shared DB | 需要網路 | 需要網路 |
-| 語音 / 第二層 AI | — | 視所選服務需要網路 |
+| 語音輸入 | ✅（需先安裝語音模型） | ✅（視所選服務可能需要網路） |
+| 第二層 AI | — | ✅（視所選服務需要網路） |
 
 ---
 
@@ -480,6 +523,7 @@ assets/
    ├─ screen-keyboard-chinese.png
    ├─ screen-keyboard-english.png
    ├─ screen-keyboard-settings.png
+   ├─ AIArray30_v1.1.0_voice_input.png
    └─ android/
       ├─ settings-nexacore.png
       ├─ continuous-input.png
@@ -500,7 +544,7 @@ Windows 與 Android 使用**同一個 Repository、不同 Release**。
 
 ```text
 Windows:
-win-v0.7.5
+win-v1.1.0
 
 Android:
 android-v1.1.5
