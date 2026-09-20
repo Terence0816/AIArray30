@@ -1,7 +1,7 @@
 # ⌨️ AI 行列30｜Windows + Android
 
 [![Downloads](https://img.shields.io/github/downloads/Terence0816/AIArray30/total?label=Downloads&color=success)](https://github.com/Terence0816/AIArray30/releases)
-[![Windows](https://img.shields.io/badge/Windows-v1.1.0-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/win-v1.1.0)
+[![Windows](https://img.shields.io/badge/Windows-v1.1.7-0078D6?logo=windows&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/win-v-1.1.7)
 [![Android](https://img.shields.io/badge/Android-v1.1.5-3DDC84?logo=android&logoColor=white)](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)
 ![NexaCore](https://img.shields.io/badge/AI-NexaCore-6f42c1)
 ![IME](https://img.shields.io/badge/輸入法-行列30-0A84FF)
@@ -23,7 +23,7 @@
 
 | 項目 | 目前版本 | 下載 | 影片 |
 | --- | --- | --- | --- |
-| 💻 **Windows 10 / 11** | **v1.1.0** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v1.1.0)** | **[YouTube 示範教學](https://youtu.be/O_sohVOYjJQ)** |
+| 💻 **Windows 10 / 11** | **v1.1.7** | **[下載 Windows 安裝版](https://github.com/Terence0816/AIArray30/releases/tag/win-v-1.1.7)** | **[YouTube 示範教學](https://youtu.be/O_sohVOYjJQ)** |
 | 📱 **Android** | **v1.1.5** | **[下載 Android APK](https://github.com/Terence0816/AIArray30/releases/tag/android-v1.1.5)** | **[YouTube 示範教學](https://youtu.be/YV7B3DLtNjY)** |
 | 🧩 **行列30 二級簡碼練習工具** | **v0.1.7** | **[下載練習工具](https://github.com/Terence0816/AIArray30/releases/download/v0.5.8/Array30Trainer.zip)** | — |
 
@@ -68,6 +68,8 @@ AIArray30_vX.X.X.apk_sha256.txt
 | 正式 Shared DB 更新 | ✅ | ✅ |
 | 個人學習匯出 / 匯入 | ✅ | ✅ |
 | AI 行列30 專屬螢幕鍵盤 | ✅ | — |
+| 螢幕鍵盤按鍵提示音 | ✅ | — |
+| 螢幕鍵盤語音 Start / Stop | ✅ | — |
 | Shift 臨時英文輸入 | ✅ | — |
 | Windows TSF | ✅ | — |
 | 連續手寫 | — | ✅ |
@@ -86,13 +88,23 @@ AI 行列30 Windows 版採用 **Microsoft TSF（Text Services Framework）**，�
 
 Windows 11 x64 系統中同時提供 **x64 + x86 TSF**，因此可支援 64 位元與 32 位元應用程式。
 
-## 🆕 Windows v0.7.5 ～ v1.1.0 主要更新
+## 🆕 Windows v0.7.5 ～ v1.1.7 主要更新
 
 ### ⌨️ 螢幕鍵盤功能強化
 
 - 螢幕鍵盤可縮小成更精簡的尺寸。
 - 優化小尺寸顯示，Backspace、Home、PgUp / PgDn 等按鍵會自動改用簡潔圖示或短標示，避免文字擠壓。
 - 支援縮小至工作列暫時隱藏，不需完全關閉程式。
+- 新增螢幕鍵盤按鍵提示音，可於設定中開啟／關閉。
+- 全面調整鍵盤版面與按鍵比例，放大主要輸入區並縮小右側功能區佔用空間。
+- 完善 Enter、Backspace、左右 Shift、Home、End、PgUp、PgDn、Del、Ins、PrSc、Menu 與方向鍵配置。
+- 新增 **Fn** 功能鍵，可將數字列切換為 **F1 ～ F12**。
+- 修正數字列與行列碼按鍵垂直對齊，讓 `1 ～ 0`、`1↑ ～ 0↑`、`1- ～ 0-`、`1↓ ～ 0↓` 共用一致欄位。
+- 完善 Shift 狀態下的符號顯示，例如 `[] → {}`、`\ → |` 與數字列 Shift 符號。
+- 修正候選字視窗遮擋螢幕鍵盤的問題；重疊時螢幕鍵盤會維持較高顯示與操作優先權，候選字仍可正常使用。
+- 標題列新增麥克風按鈕，可直接開始／停止語音聆聽，並同步顯示目前語音狀態。
+- 更新麥克風按鈕與 Enter 鍵圖示，提升辨識度與整體質感。
+- 改善螢幕鍵盤微透明、藍色發光邊框、白字與行列碼配色顯示。
 
 ### 🎨 設定介面全面重新設計
 
@@ -126,7 +138,7 @@ Windows 11 x64 系統中同時提供 **x64 + x86 TSF**，因此可支援 64 位�
 - 一般輸入與連續輸入皆支援簡體中文輸出。
 - 語音輸入另有獨立的簡體中文輸出開關，可與鍵盤輸入分開設定。
 
-👉 **[查看 Windows v1.1.0 Release](https://github.com/Terence0816/AIArray30/releases/tag/win-v1.1.0)**
+👉 **[查看 Windows v1.1.7 Release](https://github.com/Terence0816/AIArray30/releases/tag/win-v-1.1.7)**
 
 ## 🆕 Windows v0.5.9 ～ v0.7.5 主要更新
 
@@ -178,6 +190,11 @@ Windows 版內建 AI 行列30 專屬螢幕鍵盤，可與實體鍵盤同時交�
 - 中文 / 英文狀態即時同步
 - 實體鍵盤與螢幕鍵盤交替輸入
 - 滑鼠移入與按下視覺回饋
+- 按鍵提示音，可於設定中開啟／關閉
+- 標題列麥克風按鈕，可直接開始／停止語音聆聽
+- Fn → F1 ～ F12 功能鍵
+- 完整的 Enter、Backspace、雙 Shift、PrSc、Menu、方向鍵與導覽鍵配置
+- 候選字視窗與鍵盤重疊時，螢幕鍵盤維持較高顯示與操作優先權
 - 小尺寸時自動簡化部分功能鍵顯示
 - 行列鍵位可選直列對齊或傳統鍵位排列
 - 三排配色可選預設方案或使用 Windows 色盤自訂
@@ -205,6 +222,7 @@ Windows 版可直接新增或修改連續輸入候選句子，並依目前按碼
 - 鍵碼不符時顯示黃色警告區
 - 長句會自動加寬、換行與增加輸入框高度
 - 超長內容可在輸入框內捲動
+- 新增／編輯候選詞句時加大文字顯示，提升閱讀與修改便利性
 
 ### 連續輸入詞彙共用學習中心
 
@@ -544,7 +562,7 @@ Windows 與 Android 使用**同一個 Repository、不同 Release**。
 
 ```text
 Windows:
-win-v1.1.0
+win-v-1.1.7
 
 Android:
 android-v1.1.5
